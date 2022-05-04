@@ -6,6 +6,7 @@ name: 'Build and push images'
 # https://github.com/docker/login-action
 
 on:
+  workflow_dispatch:
   push:
     branches:
       - master

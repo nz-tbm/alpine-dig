@@ -18,7 +18,8 @@ jobs:
         id: checkout
         uses: actions/checkout@v2
 
-      - name: Build
+      - name: Build and test
         id: build
         run: |
           docker build --tag local/dig-short:test .
+          docker run --rm local/dig-short:test 1dot1dot1dot1.cloudflare-dns.com | grep 1.1.1.1
