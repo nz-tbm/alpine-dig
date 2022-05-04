@@ -1,10 +1,6 @@
 ---
 name: 'Build and test'
 
-# https://blog.oddbit.com/post/2020-09-25-building-multi-architecture-im/
-# https://github.com/ahmetozer/github-actions-multi-arch-container-ghcr.io
-# https://github.com/docker/login-action
-
 on:
   pull_request:
     paths-ignore:
